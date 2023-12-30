@@ -1,15 +1,15 @@
-package com.student.models;
+package models;
 
 public class Student {
 
     private String cin;
     private String name;
-    private String age;
+    private int age;
 
-    public student() {
+    public Student() {
     }
 
-    public student(String cin, String name, String age) {
+    public Student(String cin, String name, int age) {
         this.cin = cin;
         this.name = name;
         this.age = age;
@@ -31,11 +31,11 @@ public class Student {
         this.name = name;
     }
 
-    public String getAge() {
+    public int getAge() {
         return this.age;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
     }
 }
