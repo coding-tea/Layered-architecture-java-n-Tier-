@@ -1,5 +1,6 @@
 package business;
 
+import java.util.ArrayList;
 import java.util.List;
 import dao.StudentDao;
 import models.Student;
@@ -7,6 +8,10 @@ import models.Student;
 public class StudentBusiness implements StudentDao {
 
     private List<Student> students;
+
+    public StudentBusiness(){
+        this.students = new ArrayList<>();
+    }
 
     @Override
     public List<Student> selectALL() {
@@ -18,7 +23,8 @@ public class StudentBusiness implements StudentDao {
             String cin,
             String name,
             int age) {
-        this.students.add(new Student(cin, name, age));
+        Student student = new Student(cin, name, age);
+        this.students.add(student);
     }
 
     @Override
