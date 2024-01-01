@@ -13,7 +13,7 @@ public class StudentPresentation {
 
         int choise = 0;
         while (choise != 5) {
-            System.out.println("Enter from 1 to 6 : ");
+            System.out.println("Enter from 1 to 5 : ");
             System.out.println(
                     "1 : show all student \n2 : show specific student\n3 : create a new student\n4: delete student\n5 : exit");
             choise = scanner.nextInt();
